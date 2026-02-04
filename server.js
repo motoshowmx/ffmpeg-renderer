@@ -49,6 +49,6 @@ app.post("/render-reel", upload.array("images", 7), async (req, res) => {
   }
 });
 
-app.listen(3001, "0.0.0.0", () => {
-  console.log("FFmpeg renderer running on 3001");
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`FFmpeg renderer running on ${PORT}`);
 });
